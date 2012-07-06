@@ -649,11 +649,11 @@ print(x*2)
 
 
 
-* References
+* Literatur/Quellen
 
 ** 
 
-*** References
+*** Literatur/Quellen
 
 - Schulte, Eric, Dan Davison, Thomas Dye, und Carsten Dominik. 2012. A
   Multi-Language Computing Environment for Literate Programming and Reproducible
