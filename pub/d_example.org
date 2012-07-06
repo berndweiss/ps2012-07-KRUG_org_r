@@ -47,9 +47,16 @@ Now, some R code:
 x <- rnorm(100)
 ## Estimate mean
 mean(x)
+sd(x)
+var(x)
 #+END_SRC
 
-The mean of x is src_R[:exports results :results value raw :session *R*]{round(mean(x), 3)}
+#+RESULTS:
+: [1] 0.1497353
+: [1] 0.9998995
+: [1] 0.9997991
+
+The mean of x is src_R[:exports results :results value raw :session *R*]{round(mean(x), 3)} -0.005
 
 
 * Plot a histogram
@@ -80,21 +87,30 @@ See Figure \ref{f:ggplot} blablabla
 
 #+NAME: bashexamp
 #+BEGIN_SRC sh :session *SH* :exports results :results output
-ls -la
+ls -l
 #+END_SRC
 
 #+RESULTS: bashexamp
-: total 126
-: drwxr-xr-x    7 Bernd    Administ     4096 Jul  6 08:10 .
-: drwxr-xr-x   10 Bernd    Administ     4096 Jul  5 19:00 ..
-: drwxr-xr-x    1 Bernd    Administ        0 Jul  5 19:00 auto
-: -rw-r--r--    1 Bernd    Administ     6299 Jul  5 19:00 d_example.html
-: -rw-r--r--    1 Bernd    Administ     1949 Jul  6 08:14 d_example.org
-: -rw-r--r--    1 Bernd    Administ   235899 Jul  6 08:10 d_example.pdf
-: -rw-r--r--    1 Bernd    Administ     2721 Jul  6 08:10 d_example.tex
+: total 252
+: d--------- 1 weiss mkgroup      0 Jul  6 11:30 auto
+: ---------- 1 weiss mkgroup   6299 Jul  5 21:00 d_example.html
+: ---------- 1 weiss mkgroup   2603 Jul  6 12:33 d_example.org
+: ---------- 1 weiss mkgroup 238121 Jul  6 12:34 d_example.pdf
+: ---------- 1 weiss mkgroup   2847 Jul  6 12:33 d_example.tex
 
 
 #+BEGIN_SRC R :var x = bashexamp :session *R2* :results output :exports both
 substr(x, 1, 30)
 #+END_SRC
+
+#+RESULTS:
+: [1] "total 256\nd--------- 1 weiss m"
+
+
+
+
+
+
+
+
 

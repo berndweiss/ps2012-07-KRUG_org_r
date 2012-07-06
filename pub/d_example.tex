@@ -1,4 +1,4 @@
-% Created 2012-07-06 Fr 11:48
+% Created 2012-07-06 Fr 19:17
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -82,13 +82,17 @@ Now, some R code:
 x <- rnorm(100)
 ## Estimate mean
 mean(x)
+sd(x)
+var(x)
 \end{lstlisting}
 
 \begin{verbatim}
- [1] 0.1856337
+ [1] -0.01011993
+ [1] 1.023805
+ [1] 1.048176
 \end{verbatim}
 
-The mean of x is 0.186
+The mean of x is -0.01 -0.005
 \section{Plot a histogram}
 \label{sec-2}
 
@@ -116,14 +120,14 @@ See Figure \ref{f:ggplot} blablabla
 
 \begin{verbatim}
  
- total 256
- d--------- 1 weiss mkgroup      0 Jul  6 11:31 .
- d--------- 1 weiss mkgroup      0 Jul  6 11:30 ..
+ null device 
+           1
+ > total 248
  d--------- 1 weiss mkgroup      0 Jul  6 11:30 auto
- ---------- 1 weiss mkgroup   6299 Jul  5 21:00 d_example.html
- ---------- 1 weiss mkgroup   2462 Jul  6 10:18 d_example.org
- ---------- 1 weiss mkgroup 237437 Jul  6 10:18 d_example.pdf
- ---------- 1 weiss mkgroup   2879 Jul  6 10:18 d_example.tex
+ ---------- 1 weiss mkgroup    122 Jul  6 19:15 d_example.html
+ ---------- 1 weiss mkgroup   2451 Jul  6 19:15 d_example.org
+ ---------- 1 weiss mkgroup 238121 Jul  6 12:34 d_example.pdf
+ ---------- 1 weiss mkgroup   2847 Jul  6 12:33 d_example.tex
 \end{verbatim}
 
 
@@ -134,7 +138,7 @@ substr(x, 1, 30)
 \end{lstlisting}
 
 \begin{verbatim}
- [1] "total 256\nd--------- 1 weiss m"
+ [1] "total 248\nd--------- 1 weiss m"
 \end{verbatim}
 
 \end{document}

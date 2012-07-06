@@ -1,4 +1,4 @@
-% Created 2012-07-06 Fr 12:01
+% Created 2012-07-06 Fr 19:53
 \documentclass[bigger]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -652,12 +652,13 @@ Siehe hierfür \texttt{pub/d\_example.org} and \texttt{pub/d\_example.pdf}.
 Define variable =y= in a Python code block: 
 #+name: chainexamp
 #+begin_src python :results value :session *python*
-y = 9**4
+y = 10**4
 y
 #+end_src
 
 #+RESULTS: chainexamp
 : 10000
+
 
 Then pass variable =y= to an R code block:
 #+BEGIN_SRC R :var x=chainexamp :session *R2*
@@ -666,8 +667,8 @@ print(x*2)
 #+END_SRC
 
 #+RESULTS:
-: [1] 6561
-: [1] 13122
+: [1] 10000
+: [1] 20000
 \end{lstlisting}
 \end{frame}
 \begin{frame}[fragile]
