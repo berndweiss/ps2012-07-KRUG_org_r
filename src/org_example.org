@@ -1,0 +1,27 @@
+#+TITLE: Hello World!
+#+AUTHOR: Martin Mosquito
+#+DATE: <2012-07-06 Fr>
+
+#+LATEX: \thispagestyle{empty}
+
+* Headline
+
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+  diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+  aliquyam erat, sed diam voluptua. At vero eos et accusam et 
+  justo duo dolores et ea rebum. Stet clita kasd gubergren, no 
+  sea takimata sanctus est Lorem ipsum dolor sit. 
+
+  A list:
+  - Item 1
+  - Item 2  
+
+** Subsection 
+
+   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+   sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+   magna aliquyam erat, sed diam
+   
+   \begin{equation}
+   y = \alpha + \beta_1 x_1 + \epsilon
+   \end{equation}

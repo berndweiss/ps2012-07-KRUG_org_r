@@ -1,0 +1,100 @@
+#+title: Example
+#+author: Bernd Weiss
+#+date: 2012-07-06
+
+
+#+begin_LaTeX
+\definecolor{dkgreen}{rgb}{0,0.5,0}
+\definecolor{dkred}{rgb}{0.5,0,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+
+\lstset{basicstyle=\ttfamily\bfseries\footnotesize,
+morekeywords={virtualinvoke},
+%%keywordstyle=\color{blue},
+%%ndkeywordstyle=\color{red},
+commentstyle=\color{dkred},
+%%stringstyle=\color{dkgreen},
+numbers=left,
+numberstyle=\ttfamily\tiny\color{gray},
+stepnumber=1,
+numbersep=10pt,
+backgroundcolor=\color{white},
+tabsize=4,
+showspaces=false,
+showstringspaces=false,
+xleftmargin=.23in
+}
+#+end_LaTeX
+
+
+\begin{abstract}
+abstract abstract abstract abstract abstract abstract abstract abstract abstract 
+\end{abstract}
+
+
+* Introduction and some R code
+
+Let's start with an equation: 
+
+\begin{equation}
+v^{*}_{j} = v_{j} + \tau^{2} 
+\end{equation}
+
+Now, some R code:
+
+#+BEGIN_SRC R :exports both :results output :session *R*
+## Create 100 normally distributed numbers 
+x <- rnorm(100)
+## Estimate mean
+mean(x)
+#+END_SRC
+
+The mean of x is src_R[:exports results :results value raw :session *R*]{round(mean(x), 3)}
+
+
+* Plot a histogram
+
+#+BEGIN_SRC R :exports results :session *R* :results graphics :file ../fig/f_pub_histogram.pdf
+hist(x)
+#+END_SRC
+
+#+RESULTS:
+[[file:../fig/f_pub_histogram.pdf]]
+
+
+
+#+BEGIN_SRC R :exports none :session *R* :results graphics :file ../fig/f_pub_histogram_gg.pdf
+library(ggplot2)
+ggplot(aes(x = x), data = data.frame(x)) + geom_histogram()
+#+END_SRC
+
+#+caption: A beautiful ggplot2 plot
+#+label: f:ggplot
+#+attr_latex: width = 0.2\linewidth, clip
+[[file:../fig/f_pub_histogram_gg.pdf]]
+
+See Figure \ref{f:ggplot} blablabla
+
+
+* Use the Bash!
+
+#+NAME: bashexamp
+#+BEGIN_SRC sh :session *SH* :exports results :results output
+ls -la
+#+END_SRC
+
+#+RESULTS: bashexamp
+: total 126
+: drwxr-xr-x    7 Bernd    Administ     4096 Jul  6 08:10 .
+: drwxr-xr-x   10 Bernd    Administ     4096 Jul  5 19:00 ..
+: drwxr-xr-x    1 Bernd    Administ        0 Jul  5 19:00 auto
+: -rw-r--r--    1 Bernd    Administ     6299 Jul  5 19:00 d_example.html
+: -rw-r--r--    1 Bernd    Administ     1949 Jul  6 08:14 d_example.org
+: -rw-r--r--    1 Bernd    Administ   235899 Jul  6 08:10 d_example.pdf
+: -rw-r--r--    1 Bernd    Administ     2721 Jul  6 08:10 d_example.tex
+
+
+#+BEGIN_SRC R :var x = bashexamp :session *R2* :results output :exports both
+substr(x, 1, 30)
+#+END_SRC
+

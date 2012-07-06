@@ -1,0 +1,5 @@
+ref/nopubdoc/*
+slide/old/*
+doc/nopubdoc/*
+*.zip
+.gitattributes
