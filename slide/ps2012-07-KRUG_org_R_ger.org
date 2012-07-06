@@ -97,7 +97,7 @@ xleftmargin=.23in
 ** 
 
 *** Vorbemerkungen
-- Bin fortgeschrittenen Anfänger was Org angeht
+- Bin fortgeschrittener Anfänger was Org angeht
 - Vielen Dank an Carsten Dominik (von 2003 bis 2011 Hauptentwickler), Eric Schulte und Dan Davison
   (haben die "Babel-Funktionen" in Org Mode entwickelt)
 - Alle Materialien (inkl. engl. Fassung der Folien) dieser Präsentation finden sich auf github: https://github.com/berndweiss/ps2012-07-KRUG_org_r.
