@@ -1,0 +1,4 @@
+Slides from the [[http://www.meetup.com/KoelnRUG/events/62198062/][R Benutzer Treffen Köln / R user meeting in Cologne ]] on "A brief
+introduction to reproducible research with Emacs’ Org mode and R". See folder
+=slide/= for the actual PDF slides (=*_en.org=: English slides and =*_ger.org=: German slides). 
+

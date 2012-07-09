@@ -581,6 +581,14 @@ See =pub/d_example.org= and =pub/d_example.pdf=.
 
 
 
+
+** A brief Org example
+
+*** A brief Org example
+
+See =pub/d_example.org= and =pub/d_example.pdf=.
+
+
 * R and other languages (Python)
 
 ** 
@@ -596,7 +604,7 @@ See =pub/d_example.org= and =pub/d_example.pdf=.
 ,Define variable =y= in a Python code block: 
 ,#+name: chainexamp
 ,#+begin_src python :results value :session *python*
-,y = 9**4
+,y = 10**4
 ,y
 ,#+end_src
 
@@ -610,8 +618,8 @@ See =pub/d_example.org= and =pub/d_example.pdf=.
 ,#+END_SRC
 
 ,#+RESULTS:
-,: [1] 6561
-,: [1] 13122
+,: [1] 10000
+,: [1] 20000
 #+END_SRC
 
 
