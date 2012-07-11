@@ -161,7 +161,7 @@ xleftmargin=.23in
 ** Emacs
 
 *** Emacs -- ein kurzer Überblick
-- Emacs ist a Texteditor 
+- Emacs ist ein Texteditor 
 - Erweiterbar und an eigene Bedürfnisse anpassbar durch Emacs Lisp
 - Emacs steht für "Editor MACroS"
 - Entwicklung begann bereits in den 1970er Jahren, die aktuelle Version ist 24.1
